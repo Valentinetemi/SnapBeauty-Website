@@ -1,0 +1,149 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+:root {
+  /* Nigerian-inspired color palette: vibrant warm tones with modern elegance */
+  --background: #0f0f0f;
+  --foreground: #fafaf8;
+  --card: #1a1a18;
+  --card-foreground: #fafaf8;
+  --popover: #0f0f0f;
+  --popover-foreground: #fafaf8;
+  --primary: #1a1a18;
+  --primary-foreground: #ff8c42;
+  --secondary: #1f4f3d;
+  --secondary-foreground: #fafaf8;
+  --muted: #2a2a28;
+  --muted-foreground: #999999;
+  --accent: #ff8c42;
+  --accent-foreground: #0f0f0f;
+  --accent-secondary: #1f4f3d;
+  --accent-tertiary: #d4221a;
+  --destructive: #d4221a;
+  --destructive-foreground: #ffffff;
+  --border: #2a2a28;
+  --input: #1a1a18;
+  --ring: #ff8c42;
+  --chart-1: #ff8c42;
+  --chart-2: #1f4f3d;
+  --chart-3: #d4221a;
+  --chart-4: #ffb26b;
+  --chart-5: #2d7a6e;
+  --radius: 0.625rem;
+  --sidebar: #0f0f0f;
+  --sidebar-foreground: #fafaf8;
+  --sidebar-primary: #1a1a18;
+  --sidebar-primary-foreground: #ff8c42;
+  --sidebar-accent: #ff8c42;
+  --sidebar-accent-foreground: #0f0f0f;
+  --sidebar-border: #2a2a28;
+  --sidebar-ring: #ff8c42;
+}
+
+.dark {
+  --background: #0f0f0f;
+  --foreground: #fafaf8;
+  --card: #1a1a18;
+  --card-foreground: #fafaf8;
+  --popover: #0f0f0f;
+  --popover-foreground: #fafaf8;
+  --primary: #1a1a18;
+  --primary-foreground: #ff8c42;
+  --secondary: #1f4f3d;
+  --secondary-foreground: #fafaf8;
+  --muted: #2a2a28;
+  --muted-foreground: #999999;
+  --accent: #ff8c42;
+  --accent-foreground: #0f0f0f;
+  --accent-secondary: #1f4f3d;
+  --accent-tertiary: #d4221a;
+  --destructive: #d4221a;
+  --destructive-foreground: #ffffff;
+  --border: #2a2a28;
+  --input: #1a1a18;
+  --ring: #ff8c42;
+  --chart-1: #ff8c42;
+  --chart-2: #1f4f3d;
+  --chart-3: #d4221a;
+  --chart-4: #ffb26b;
+  --chart-5: #2d7a6e;
+  --sidebar: #0f0f0f;
+  --sidebar-foreground: #fafaf8;
+  --sidebar-primary: #1a1a18;
+  --sidebar-primary-foreground: #ff8c42;
+  --sidebar-accent: #ff8c42;
+  --sidebar-accent-foreground: #0f0f0f;
+  --sidebar-border: #2a2a28;
+  --sidebar-ring: #ff8c42;
+}
+
+@theme inline {
+  --font-sans: "Geist", "Geist Fallback";
+  --font-serif: "Georgia", "Garamond", serif;
+  --font-mono: "Geist Mono", "Geist Mono Fallback";
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+/* Nigerian pattern accent - geometric decoration */
+.pattern-accent {
+  background-image: repeating-linear-gradient(
+      45deg,
+      transparent,
+      transparent 35px,
+      rgba(255, 140, 66, 0.03) 35px,
+      rgba(255, 140, 66, 0.03) 70px
+    ),
+    repeating-linear-gradient(
+      -45deg,
+      transparent,
+      transparent 35px,
+      rgba(31, 79, 61, 0.03) 35px,
+      rgba(31, 79, 61, 0.03) 70px
+    );
+}
