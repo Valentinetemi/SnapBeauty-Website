@@ -58,7 +58,7 @@ export default function Gallery() {
             <div className="w-12 h-1 bg-accent" />
           </div>
           <h2 className="font-serif text-5xl md:text-6xl font-bold mb-4 text-foreground">Gallery</h2>
-          <p className="text-foreground/70 text-lg">A celebration of beauty captured through our lens</p>
+          <p className="text-foreground/70 text-lg">A celebration of beauty captured through our lenss</p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
