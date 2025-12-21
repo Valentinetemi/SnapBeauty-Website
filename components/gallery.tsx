@@ -54,7 +54,7 @@ export default function Gallery() {
         >
           <div className="flex items-center justify-center gap-3 mb-4">
             <div className="w-12 h-1 bg-accent" />
-            <p className="text-accent font-semibold uppercase tracking-widest text-sm">Our Work</p>
+            <p className="text-accent font-semibold uppercase tracking-widest text-sm">Our Works</p>
             <div className="w-12 h-1 bg-accent" />
           </div>
           <h2 className="font-serif text-5xl md:text-6xl font-bold mb-4 text-foreground">Gallery</h2>
